@@ -8,6 +8,12 @@ sudo systemctl daemon-reload
 sudo systemctl enable jenkins
 sudo systemctl start Jenkins
 sudo systemctl status jenkins
+
+vim /etc/ssh/sshd_config
+--- keep alive session 60
+sudo systemctl restart sshd
+
+
 sudo mkdir -p /var/tmp_disk
 sudo chmod 1777 /var/tmp_disk
 sudo mount --bind /var/tmp_disk /tmp
