@@ -6,7 +6,7 @@ sudo yum install java-21-amazon-corretto-devel git -y
 sudo yum install jenkins -y
 sudo systemctl daemon-reload
 sudo systemctl enable jenkins
-sudo systemctl start Jenkins
+sudo systemctl start jenkins
 sudo systemctl status jenkins
 
 vim /etc/ssh/sshd_config
